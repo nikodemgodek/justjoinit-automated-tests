@@ -33,7 +33,7 @@ test('sign in to candidate profile using email address and log out', async ({pag
 
     const locatorPassword = page.locator('input[placeholder="At least 8 characters"]');
     await locatorPassword.waitFor();
-    await locatorPassword.fill('Pomyj1224!');
+    await locatorPassword.fill('TestPassword123!');
 
     //submit login
     const ACTIVE_BUTTON_SUBMIT_LOCATOR = '//form//div//button/div[contains(text(), "Sign in")]';
